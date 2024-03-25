@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication3.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>CS:GO Collector</title>
+    <link href="Style/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <table style="width:1200px;margin:auto">
+            <tr style="width:1200px;height:60px">
+                    <td style="width:95px">
+                        <img src="Images/Kill Confirmed Galaxy.png" height="95" width="95" />
+                    </td>
+                    <td style="width:905px">
+                        <h1>CS:GO Collector</h1>
+                    </td>
+                    <td style="width:200px;text-align:right">
+                        <asp:ImageButton ID="youtube" runat="server" Height="50px" ImageUrl="~/Images/youtube.png" Width="50px" PostBackUrl="http://www.youtube.com/user/SnypesLMN8You/"/>&nbsp;&nbsp;&nbsp;<asp:ImageButton ID="steam" runat="server" Height="50px" ImageUrl="~/Images/steam.png" Width="50px" PostBackUrl="http://www.steamcommunity.com/id/SnypesLMN8/"/>&nbsp;&nbsp;&nbsp;<asp:ImageButton ID="twitter" runat="server" Height="50px" ImageUrl="~/Images/twitter.png" Width="50px" PostBackUrl="https://www.twitter.com/Takihary"/>&nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <main>
+            <table style="width:1200px;margin:auto">
+                <tr style="width:1200px; height:50px;background-color:darkcyan">
+                    <td colspan="3">
+                        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/default.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Add Skins.aspx" Text="Add Skins" Value="Add Skins"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/List Skins.aspx" Text="List Skins" Value="List Skins"></asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle BackColor="Aqua" ForeColor="White" />
+                            <StaticMenuItemStyle Font-Bold="True" Font-Size="Larger" ForeColor="Black" HorizontalPadding="160px" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr style="width:1200px; height:300px">
+                    <td colspan="3">
+                        <img src="Images/banner.png" />
+                    </td>
+                </tr>
+                <tr style="width:1200px;">
+                    <td colspan="3">
+                        <h1 style="text-align:center;color:aliceblue;font-size:70px">
+                        <asp:ContentPlaceHolder ID="head" runat="server">
+                        </asp:ContentPlaceHolder>
+                        </h1>
+                    </td>
+                </tr>
+                <tr style="width:1200px;">
+                    <td colspan="3">
+                        <h3 style="text-align:center;color:aliceblue;margin-left:auto;margin-right:auto;padding:10px">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                        </h3>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <table style="width:1200px;margin:auto">
+            <tr style="width:1200px;height:60px">
+                    <td style="width:95px">
+                        <img src="Images/Kill Confirmed Galaxy.png" height="95" width="95" />
+                    </td>
+                    <td style="width:905px">
+                        &copy;Tenny Akihary | 8 May 2019 | EKU CSC 313 | Final Project<br />
+                        <a href="mailto:tenny_akihary1@mymail.eku.edu">tenny_akihary1@mymail.eku.edu</a>
+                    </td>
+                    <td style="width:200px;text-align:right">
+                        <asp:ImageButton ID="ImageButton1" runat="server" Height="50px" ImageUrl="~/Images/youtube.png" Width="50px" PostBackUrl="http://www.youtube.com/user/SnypesLMN8You/"/>&nbsp;&nbsp;&nbsp;<asp:ImageButton ID="ImageButton2" runat="server" Height="50px" ImageUrl="~/Images/steam.png" Width="50px" PostBackUrl="http://www.steamcommunity.com/id/SnypesLMN8/"/>&nbsp;&nbsp;&nbsp;<asp:ImageButton ID="ImageButton3" runat="server" Height="50px" ImageUrl="~/Images/twitter.png" Width="50px" PostBackUrl="https://www.twitter.com/Takihary"/>&nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </form>
+</body>
+</html>
