@@ -1,4 +1,4 @@
-#CS:GO Skin Collector Web Application
+# CS:GO Skin Collector Web Application
 Create a small database and ASP.NET website with data query and insertion capabilities.
 # What I Learned
 * Web Development with ASP.NET.
